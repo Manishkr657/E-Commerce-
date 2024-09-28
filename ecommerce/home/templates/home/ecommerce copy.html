@@ -1,0 +1,312 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+</head>
+<link rel="stylesheet" href="search.css">   
+    <link rel="stylesheet" href="{% static 'ecommerce.css' %}">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  
+    <style>
+
+      .body {background-color: white;
+          color: black;
+
+      }
+      .dark-mode{
+          background-color:black;
+          color: white;
+      }
+    </style>
+
+    <script>
+      function myfunction()
+      {
+        var element = document.body;
+        element.classList.toggle('dark-mode');
+      }
+
+    </script>
+
+
+
+
+<body>
+<center><h3>{{ msg }}</h3></center>
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>E-Trend Collections</h1>      
+    <p>Mission, Vission & Values</p>
+  </div>
+</div>
+
+
+  
+
+</div>
+<div class="dark mode">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     
+    </div>
+   
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       <li class="active"><a href="#">Home</a></li>
+        <li><div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Product</button>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <a href="{% url 'home-shoes' %}">Shoes</a>
+            <a href="{% url 'home-TShirt' %}">Men's T-shirts</a>
+            <a href="{% url 'home-jeans' %}">Jeans</a>
+            <a href="{% url 'home-watch' %}">Watches</a>
+            <a href="{% url 'home-smartphone' %}">Smart Phones</a>
+            <a href="{% url 'home-television' %}">Televisions</a>
+            <a href="{% url 'home-hoodies' %}">Hoodies</a>
+            <a href="{% url 'home-dinnerset' %}">Dinner Sets</a>
+            <a href="{% url 'home-blankets' %}">Blankets</a>
+            <a href="{% url 'home-laptop' %}">Laptops</a>
+            <a href="{% url 'home-microwave' %}">Microwaves</a>
+            <a href="{% url 'home-coffeemaker' %}">Coffee Makers</a>
+            <a href="{% url 'home-bed' %}">Beds</a>
+            <a href="{% url 'home-Airconditioner' %}">Air Conditioners</a>
+            <a href="{% url 'home-book' %}">Books</a>
+            <a href="{% url 'home-bag' %}">Bags</a>
+            <a href="{% url 'home-sarees' %}">Sarees</a>
+            <a href="{% url 'home-washingmachine' %}">Washing Machine</a>
+          </div></li>
+       
+      
+        <li><a href="{% url 'home-contact' %}">Contact</a></li>
+        <!--<li><a href="darkmode.html">DARK MODE</a></li>-->
+        <li onClick="myfunction()" style="padding:13px; color: white">D/N</li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{% url 'home-login' %}"><span class="glyphicon glyphicon-user"></span> Account</a></li>
+        <li><a href="{% url 'home-addtocart' %}"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+      
+     
+     </div>
+    
+    
+    
+  </div>
+
+  
+</nav>
+
+
+    
+
+
+
+<div class="heading1">
+  
+</div>
+</header>
+<section>
+<div class="section">
+  <div class="section1">
+    <div class="img-slider">
+      <img src="https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img">
+      <img src="https://images.pexels.com/photos/3962294/pexels-photo-3962294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img">
+      <img src="https://images.pexels.com/photos/2292953/pexels-photo-2292953.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="img">
+      <img src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img">
+      <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img">
+    </div>
+
+  </div>
+  <div class="section2">
+    <div class="container">
+      <div class="items" ><a href="{% url 'home-shoes' %}">
+        <div class="img img1"> <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+        <div class="name">SHOES</div>
+        <div class="price">$4-$800</div>
+        <div class="info"></div></a>
+      </div>
+      <div class="items"><a href="{% url 'home-TShirt' %}">
+        <div class="img img2"><img src="https://images.pexels.com/photos/3649765/pexels-photo-3649765.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+        <div class="name">MEN's T-SHIRT</div>
+        <div class="price">$4-$24</div>
+        <div class="info"></div></a>
+      </div>
+      <div class="items"><a href="{% url 'home-jeans' %}">
+        <div class="img img3"><img src="https://media.istockphoto.com/photos/folded-blue-jeans-on-a-white-background-modern-casual-clothing-flat-picture-id1281304280" alt=""></div>
+        <div class="name">JEANS</div>
+        <div class="price">$4-$12</div>
+        <div class="info"></div></a>
+      </div>
+      <div class="items"><a href="{% url 'home-watch' %}">
+        <div class="img img1"><img src="https://images.pexels.com/photos/8839887/pexels-photo-8839887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+        <div class="name">WATCH</div>
+        <div class="price">$4-$13</div>
+        <div class="info"></div></a>
+      </div>
+      <div class="items"><a href="{% url 'home-smartphone' %}">
+        <div class="img img1"><img src="https://images.pexels.com/photos/6858618/pexels-photo-6858618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+        <div class="name">SMART PHONE</div>
+        <div class="price">$100-$250</div>
+        <div class="info"></div></a>
+      </div>
+      <div class="items"><a href="{% url 'home-television' %}">
+        <div class="img img1"><img src="https://images.pexels.com/photos/5552789/pexels-photo-5552789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+        <div class="name">TELEVISION</div>
+        <div class="price">$170-$290</div>
+        <div class="info"></div></a>
+      </div>
+      <div class="items"><a href="{% url 'home-hoodies' %}">
+        <div class="img img1"><img src="https://images.pexels.com/photos/4295985/pexels-photo-4295985.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+        <div class="name">HOODIES</div>
+        <div class="price">$4-$9.9</div>
+        <div class="info"></div></a>
+      </div>
+      <div class="items"><a href="{% url 'home-dinnerset' %}">
+        <div class="img img1"><img src="https://media.istockphoto.com/photos/vintage-plates-with-silver-teaspoons-picture-id184363070" alt=""></div>
+        <div class="name">DINNER SET</div>
+        <div class="price">$5-$8</div>
+        <div class="info"></div></a>
+      </div>
+      <div class="items"><a href="{% url 'home-blankets' %}">
+        <div class="img img1"><img src="https://images.pexels.com/photos/6463348/pexels-photo-6463348.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+        <div class="name">BLANKETS</div>
+        <div class="price">$4-$10</div>
+        <div class="info"></div></a>
+      </div>
+      <div class="items"><a href="{% url 'home-laptop' %}">
+        <div class="img img1"><img src="https://images.pexels.com/photos/2659939/pexels-photo-2659939.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+        <div class="name">LAPTOP</div>
+        <div class="price">$480-$600</div>
+        <div class="info"></div></a>
+      </div>
+      <div class="items"><a href="{% url 'home-microwave' %}">
+        <div class="img img1"><img src="https://media.istockphoto.com/photos/modern-kitchen-microwave-oven-picture-id1144960519" alt=""></div>
+        <div class="name">MICROWAVE</div>
+        <div class="price">$409-$433</div>
+        <div class="info"></div></a>
+      </div>
+      <div class="items"><a href="{% url 'home-coffeemaker' %}">
+        <div class="img img1"><img src="https://media.istockphoto.com/photos/black-coffee-maker-with-green-led-lights-picture-id177395430" alt=""></div>
+        <div class="name">COFFEE MAKER</div>
+        <div class="price">$57-$88</div>
+        <div class="info"></div></a>
+      </div>
+      <div class="items"><a href="{% url 'home-bed' %}">
+        <div class="img img1"><img src="https://images.pexels.com/photos/6606354/pexels-photo-6606354.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+        <div class="name">BED</div>
+        <div class="price">$450-$625</div>
+        <div class="info"></div></a>
+      </div>
+      <div class="items"><a href="{% url 'home-Airconditioner' %}">
+        <div class="img img1"><img src="https://media.istockphoto.com/photos/woman-turning-on-air-conditioner-picture-id1325708905" alt=""></div>
+        <div class="name">AIR CONDITIONER</div>
+        <div class="price">$545-$620</div>
+        <div class="info"></div></a>
+      </div>
+      <div class="items"><a href="{% url 'home-book' %}">
+        <div class="img img1"><img src="https://images.pexels.com/photos/5834/nature-grass-leaf-green.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+        <div class="name">BOOK</div>
+        <div class="price">$4-$13</div>
+        <div class="info"></div></a>
+      </div>
+      <div class="items"><a href="{% url 'home-bag' %}">
+        <div class="img img1"><img src="https://images.pexels.com/photos/4339598/pexels-photo-4339598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+        <div class="name">BAG</div>
+        <div class="price">$13-$60</div>
+        <div class="info"></div></a>
+      </div>
+      <div class="items"><a href="{% url 'home-sarees' %}">
+        <div class="img img1"><img src="https://media.istockphoto.com/photos/hand-of-a-lady-selecting-yellow-colored-saree-in-a-shop-picture-id1301740530" alt=""></div>
+        <div class="name">SAREES</div>
+        <div class="price">$12-$33</div>
+        <div class="info"></div></a>
+      </div>
+      <div class="items"><a href="{% url 'home-washingmachine' %}">
+        <div class="img img1"><img src="https://images.pexels.com/photos/5816934/pexels-photo-5816934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+        <div class="name">WASHING MACHINE</div>
+        <div class="price">$22-$40</div>
+        <div class="info"></div></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</section>
+<footer>
+<div class="footer0">
+  <h1>E-Trend Collections</h1>
+</div>
+<div class="footer1 ">
+  Connect with us at<div class="social-media">
+    <a href="https://www.facebook.com/">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+    <a href="https://www.linkedin.com/">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+    <a href="https://www.youtube.com/">
+      <ion-icon name="logo-youtube"></ion-icon>
+    </a>
+    <a href="https://www.instagram.com/">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+    <a href="https://www.twitter.com/">
+      <ion-icon name="logo-twitter"></ion-icon>
+    </a>
+  </div>
+</div>
+<div class="footer2">
+  <div class="product">
+    <div class="heading">Products</div>
+    <div class="div">Sell your Products</div>
+    <div class="div">Advertise</div>
+    <div class="div">Pricing</div>
+    <div class="div">Product Buisness</div>
+  </div>
+  <div class="services">
+    <div class="heading">Services</div>
+    <div class="div">Return</div>
+    <div class="div">Cash Back</div>
+    <div class="div">Affiliate Marketing</div>
+    <div class="div">Others</div>
+  </div>
+  <div class="Company">
+    <div class="heading">Company</div>
+    <div class="div">Complaint</div>
+    <div class="div">Careers</div>
+    <div class="div">Affiliate Marketing</div>
+    <div class="div">Support</div>
+  </div>
+  <div class="Get Help">
+    <div class="heading">Get Help</div>
+    <div class="div">Help Center</div>
+    <div class="div">Privacy Policy</div>
+    <div class="div">Terms</div>
+    <div class="div"><a href="{% url 'home-login' %}">Login</a></div>
+  </div>
+</div>
+</div>
+<div class="footer3">Copyright © <h4>E-Trend Collections</h4> 2021-2028</div>
+</footer>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="{% static 'ecommerce.js' %}"></script>
+
+</body>
+
+</html>

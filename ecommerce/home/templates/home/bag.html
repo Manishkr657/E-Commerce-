@@ -1,0 +1,207 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+    <title>BAG</title>
+</head>
+<link rel="stylesheet" href="{% static 'ecommerce.css' %}">
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'search.css' %}">   
+    <style>
+
+      .body {background-color: white;
+          color: black;
+
+      }
+      .dark-mode{
+          background-color:black;
+          color: white;
+      }
+    </style>
+
+    <script>
+      function myfunction()
+      {
+        var element = document.body;
+        element.classList.toggle('dark-mode');
+      }
+
+    </script>
+
+
+
+
+
+<body>
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1>E-Trend Collections</h1>      
+      <p>Mission, Vission & Values</p>
+    </div>
+  </div>
+  
+  
+    
+  
+  </div>
+  <div class="dark mode">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+       
+      </div>
+     
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+         <li><a href="{% url 'home-ecommerce' %}">Home</a></li>
+          <li class="active"><div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" >Product</button>
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+              <a href="{% url 'home-shoes' %}">Shoes</a>
+              <a href="{% url 'home-TShirt' %}">Men's T-shirts</a>
+              <a href="{% url 'home-jeans' %}">Jeans</a>
+              <a href="{% url 'home-watch' %}">Watches</a>
+              <a href="{% url 'home-smartphone' %}">Smart Phones</a>
+              <a href="{% url 'home-television' %}">Televisions</a>
+              <a href="{% url 'home-hoodies' %}">Hoodies</a>
+              <a href="{% url 'home-dinnerset' %}">Dinner Sets</a>
+              <a href="{% url 'home-blankets' %}">Blankets</a>
+              <a href="{% url 'home-laptop' %}">Laptops</a>
+              <a href="{% url 'home-microwave' %}">Microwaves</a>
+              <a href="{% url 'home-coffeemaker' %}">Coffee Makers</a>
+              <a href="{% url 'home-bed' %}">Beds</a>
+              <a href="{% url 'home-Airconditioner' %}">Air Conditioners</a>
+              <a href="{% url 'home-book' %}">Books</a>
+              <a href="{% url 'home-bag' %}">Bags</a>
+              <a href="{% url 'home-sarees' %}">Sarees</a>
+              <a href="{% url 'home-washingmachine' %}">Washing Machine</a>
+            </div></li>
+         
+        
+          <li><a href="{% url 'home-contact' %}">Contact</a></li>
+          <!--<li><a href="darkmode.html">DARK MODE</a></li>-->
+          <li onClick="myfunction()" style="padding:13px; color: white">D/N</li>
+        </ul>
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="{% url 'home-login' %}"><span class="glyphicon glyphicon-user"></span> Account</a></li>
+          <li><a href="{% url 'home-addtocart' %}"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        </ul>
+        
+       
+       </div>
+      
+      
+      
+    </div>
+  
+    
+  </nav>
+  
+  
+  
+
+              
+<div class="section2">
+    <div class="container">
+      <div class="items">
+            <div class="img img1"><img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61iR9NMcKpL._UL1280_.jpg" alt=""></div>
+            <div class="name">BAG</div>
+            <div class="price">$45</div>
+            <div class="info"><a href="{% url 'home-payment' %}">BUY NOW</a></div>
+        </div>
+
+        <div class="items">
+            <div class="img img1"><img src="https://assets.ajio.com/medias/sys_master/root/20221215/9hWy/639a245df997ddfdbdd3f267/-473Wx593H-460754561-grey-MODEL.jpg" alt=""></div>
+            <div class="name">BAG</div>
+            <div class="price">$55</div>
+            <div class="info"><a href="{% url 'home-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://contents.mediadecathlon.com/p754503/fbcee8b31f4e88a93c4271156a2fb9dc/p754503.jpg" alt=""></div>
+            <div class="name">BAG</div>
+            <div class="price">$59</div>
+            <div class="info"><a href="{% url 'home-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://img3.hkrtcdn.com/20452/prd_2045112-MuscleBlaze-Hybrid-Gym-Bag-UNLEASH-THE-ZIDD-Black_o.jpg" alt=""></div>
+            <div class="name">BAG</div>
+            <div class="price">$45</div>
+            <div class="info"><a href="{% url 'home-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://cdn.shopify.com/s/files/1/0549/5809/6466/products/11_2_3.jpg?v=1667295016" alt=""></div>
+            <div class="name">BAG</div>
+            <div class="price">$58</div>
+            <div class="info"><a href="{% url 'home-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/97261269-c5b0-48ef-b4d6-38e697bbc1f1/sportswear-essentials-tote-bag-dlBJfm.png" alt=""></div>
+            <div class="name">HAND BAG</div>
+            <div class="price">$39</div>
+            <div class="info"><a href="{% url 'home-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51LZ1Y9QKiL._UY500_.jpg" alt=""></div>
+            <div class="name">BAG</div>
+            <div class="price">$55.5</div>
+            <div class="info"><a href="{% url 'home-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81yQY+q7mNL._SL1500_.jpg" alt=""></div>
+            <div class="name">BAG</div>
+            <div class="price">$44.9</div>
+            <div class="info"><a href="{% url 'home-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://cdn.shopify.com/s/files/1/2186/5207/products/ART_9604_600x.jpg?v=1629700693" alt=""></div>
+            <div class="name">BAG</div>
+            <div class="price">$66.5</div>
+            <div class="info"><a href="{% url 'home-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://images.squarespace-cdn.com/content/v1/548ec3bee4b068057bfb6db7/1555524365342-FSB67T1LCR7M776FHNTB/palm+trees+bag.jpg?format=1000w" alt=""></div>
+            <div class="name">BAG</div>
+            <div class="price">$22.9  </div>
+            <div class="info"><a href="{% url 'home-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81IiFRUxeWL._UY550_.jpg" alt=""></div>
+            <div class="name">BAG</div>
+            <div class="price">$12.9</div>
+            <div class="info"><a href="{% url 'home-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://images.dailyobjects.com/marche/assets/images/other/messenger-bags-1s.png?tr=cm-pad_resize,v-2,dpr-2,q-60" alt=""></div>
+            <div class="name">BAG</div>
+            <div class="price">$17.7</div>
+            <div class="info"><a href="{% url 'home-payment' %}">BUY NOW</a></div>
+          </div>
+    </div>
+</div>
+    
+</body>
+</html>
